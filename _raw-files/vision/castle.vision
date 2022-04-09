@@ -1,0 +1,20 @@
+r_glow                    "1"
+r_glowRadius0             "32"
+r_glowBloomCutoff         ".8"
+r_glowBloomDesaturation   "0"
+r_glowBloomIntensity0     "1"
+ 
+r_filmEnable              "1"
+r_filmContrast            "1"
+
+r_filmBrightness          "0"
+r_filmDesaturation        "0.5"
+r_filmDesaturationDark    ".05"
+r_filmInvert              "0"
+r_filmLightTint           "0.909804 1.06667 1.42745"
+r_filmMediumTint          "0.760784 0.870588 1.16078"
+r_filmDarkTint            "0.596079 0.690196 0.768628"
+ 
+r_primaryLightUseTweaks              "1"
+r_primaryLightTweakDiffuseStrength   "0"
+r_primaryLightTweakSpecularStrength  "0"

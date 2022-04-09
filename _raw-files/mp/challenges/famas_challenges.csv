@@ -1,0 +1,15 @@
+ch_marksman_famas,,
+ch_expert_famas,,
+ch_famas_reflex,,reflex
+ch_famas_silencer,,silencer
+ch_famas_gl,,gl
+ch_famas_acog,,acog
+ch_famas_rof,,rof
+ch_famas_heartbeat,,heartbeat
+ch_famas_shotgun,,shotgun
+ch_famas_eotech,,eotech
+ch_famas_xmags,,xmags
+ch_famas_thermal,,thermal
+ch_famas_mastery,,
+pr_marksman_famas,tier_prestige,
+pr_expert_famas,tier_prestige,

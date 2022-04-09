@@ -1,0 +1,7 @@
+0,none,MPUI_NONE,PERKS_NO_CUSTOM_RETICLE,weapon_missing_image,viewmodel_reticle0
+1,ret1,MPUI_RETICLE1,PERKS_RETICLE1,weapon_attachment_ret1,viewmodel_reticle1
+2,ret2,MPUI_RETICLE2,PERKS_RETICLE2,weapon_attachment_ret2,viewmodel_reticle2
+3,ret3,MPUI_RETICLE3,PERKS_RETICLE3,weapon_attachment_ret3,viewmodel_reticle3
+4,ret4,MPUI_RETICLE4,PERKS_RETICLE4,weapon_attachment_ret4,viewmodel_reticle4
+5,ret5,MPUI_RETICLE5,PERKS_RETICLE5,weapon_attachment_ret5,viewmodel_reticle5
+6,ret6,MPUI_RETICLE6,PERKS_RETICLE6,weapon_attachment_ret6,viewmodel_reticle6

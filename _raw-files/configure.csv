@@ -1,0 +1,150 @@
+# The file is broken into the CPU section followed by the GPU section.
+"# The first two columns of the CPU section must be ""cpu mhz"" then ""sys mb""."
+"# The first column of the GPU section must be ""gpu"".  This triggers the start of the GPU section."
+# Each subsequent column header in both sections is a dvar name.
+"# In the CPU section, each dvar gets the value listed in its column for the row of the system settings that most closely match the current machine, without going over"
+"# In the GPU section, each dvar gets the value listed in its column for the row of the first GPU string to match."
+"# For GPU names, spaces are treated as wildcards that match any sequence of 0 or more non-numeric characters.  You can use * to match 0 or more of any character, or ? to match any single character."
+
+
+
+
+cpu ghz,sys mb,ai_corpseCount,ragdoll_enable,fx_marks,r_lodScaleSkinned,r_lodBiasSkinned,r_lodScaleRigid,r_lodBiasRigid,r_drawWater,snd_khz,snd_enableEq,ragdoll_max_simulating,r_fastSkin,min_spec_ai,r_dcburning_culldist,r_arcadia_culldist,invasion_minspec,r_gulag_lessdrones,r_roadkill_less_sparks
+
+0,128,8,0,0,1,0,1,0,0,22,1,8,1,1,1,1,1,1,1
+5.5,128,16,1,1,1,0,1,0,1,22,1,8,1,0,0,0,0,0,0
+8,128,16,1,1,1,0,1,0,1,22,1,16,0,0,0,0,0,0,0
+
+0,1024,8,0,0,1,0,1,0,0,44,1,8,1,1,1,1,1,1,1
+5.5,1024,16,1,1,1,0,1,0,1,44,1,8,1,0,0,0,0,0,0
+8,1024,16,1,1,1,0,1,0,1,44,1,16,0,0,0,0,0,0,0
+
+
+
+gpu,r_rendererPreference,r_imageQuality,sm_enable,sm_sunShadowScaleLocked,r_zfeather,cg_laserlight,r_glow_allowed,r_distortion,r_aaSamples,r_specular,r_dof_enable,r_altModelLightingUpdate,r_dlightlimit,r_ssao,disable_tank_shock_minspec
+
+GeForce 62*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 66*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 68* XT,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 68* LE,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 71*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 72*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 73*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 75*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 83*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 93*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 94*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 95*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce G 100,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce GT 120,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce GT 130,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 205,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce G 210,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 310,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 315,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce 420,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+GeForce GT 520,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+
+Quadro FX 10*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+Quadro FX 11*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+Quadro FX 14*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+Quadro FX 15*,Default,1,0,0,0,0,0,0,1,0,0,1,0,0,1
+
+Radeon X13*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon X15*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon X16*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon HD 23*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon HD 24*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon HD 34*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon HD 36*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon HD 43*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon HD 45*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon HD 46*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon HD 473*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon HD 54*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Radeon 3*,Default,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+
+
+
+GeForce 68* GT,Default,2,0,0,0,0,0,0,2,0,0,1,4,0,0
+
+
+
+GeForce 68*,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,0
+GeForce 6*,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,1
+GeForce 76*,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,0
+GeForce 84*,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,0
+GeForce 85*,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,0
+GeForce 86*,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,0
+GeForce GT 220,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,0
+GeForce GT 230,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,0
+GeForce GT 320,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,0
+GeForce GT 330,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,0
+GeForce GT 430,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,0
+GeForce GT 530,Default,1,0,0,0,0,0,0,2,0,0,1,4,0,0
+
+Radeon X18*,Default,1,0,0,0,0,0,0,2,0,0,0,4,0,0
+Radeon HD 26*,Default,1,0,0,0,0,0,0,2,0,0,0,4,0,0
+Radeon HD 55*,Default,1,0,0,0,0,0,0,2,0,0,0,4,0,0
+Radeon HD 64*,Default,1,0,0,0,0,0,0,2,0,0,0,4,0,0
+
+GeForce 78* GT,Default,2,1,0,0,0,0,1,2,0,1,1,4,0,0
+GeForce 79* GT,Default,2,1,0,0,0,0,1,2,0,1,1,4,0,0
+GeForce 7*,Default,2,0,0,0,0,0,0,2,0,0,1,4,0,0
+GeForce 87*,Default,2,1,0,0,0,0,1,2,0,1,1,4,0,0
+GeForce 96*,Default,2,1,0,0,0,0,1,2,0,1,1,4,0,0
+GeForce GT 140,Default,2,1,0,0,0,0,1,2,0,1,1,4,0,0
+GeForce GT 340,Default,2,1,0,0,0,0,1,2,0,1,1,4,0,0
+GeForce GT 440,Default,2,1,0,0,0,0,1,2,0,1,1,4,0,0
+GeForce GT 545,Default,2,1,0,0,0,0,1,2,0,1,1,4,0,0
+
+Quadro FX 1*,Default,2,0,0,0,0,0,0,2,0,0,1,4,0,0
+
+Radeon X19*,Default,2,1,0,0,0,0,1,2,0,1,0,4,0,0
+Radeon X1*,Default,2,1,0,0,0,0,1,2,0,1,0,4,0,0
+Radeon X2*,Default,2,1,0,0,0,0,1,2,0,1,0,4,0,0
+
+
+
+GeForce 88*,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+GeForce 8*,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+GeForce 98*,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+GeForce GT 240,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+GeForce GTS 450,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+
+Quadro FX 3*,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+Quadro FX 4*,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+Quadro FX 5*,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+
+Radeon HD 29*,Default,3,1,1,1,1,1,1,2,1,1,0,4,0,0
+Radeon HD 38*,Default,3,1,1,1,1,1,1,2,1,1,0,4,0,0
+Radeon HD 47*,Default,3,1,1,1,1,1,1,2,1,1,0,4,0,0
+
+
+
+GeForce GTS 150,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+GeForce GT 250,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+GeForce GT 260,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+GeForce GTX 450,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+GeForce GTX 460,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+GeForce GTX 550,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+
+Radeon HD 4830,Default,3,1,1,1,1,1,1,2,1,1,0,4,0,0
+Radeon HD 5670,Default,3,1,1,1,1,1,1,2,1,1,0,4,0,0
+Radeon HD 65*,Default,3,1,1,1,1,1,1,2,1,1,0,4,0,0
+Radeon HD 66*,Default,3,1,1,1,1,1,1,2,1,1,0,4,0,0
+
+
+
+GeForce GTX 2*,Default,4,1,1,1,1,1,1,2,1,1,1,4,0,0
+GeForce GTX 4*,Default,4,1,1,1,1,1,1,2,1,1,1,4,0,0
+GeForce GTX 5*,Default,4,1,1,1,1,1,1,2,1,1,1,4,0,0
+
+Radeon HD 48*,Default,4,1,1,1,1,1,1,2,1,1,0,4,0,0
+Radeon HD 5*,Default,4,1,1,1,1,1,1,2,1,1,0,4,0,0
+Radeon HD 6*,Default,4,1,1,1,1,1,1,2,1,1,0,4,0,0
+
+
+GeForce,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0
+Radeon,Default,3,1,1,1,1,1,1,2,1,1,0,4,0,0
+*,Default,3,1,1,1,1,1,1,2,1,1,1,4,0,0

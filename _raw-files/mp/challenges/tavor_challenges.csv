@@ -1,0 +1,14 @@
+ch_marksman_tavor,,
+ch_expert_tavor,,
+ch_tavor_reflex,,reflex
+ch_tavor_silencer,,silencer
+ch_tavor_gl,,gl
+ch_tavor_acog,,acog
+ch_tavor_heartbeat,,heartbeat
+ch_tavor_shotgun,,shotgun
+ch_tavor_eotech,,eotech
+ch_tavor_xmags,,xmags
+ch_tavor_thermal,,thermal
+ch_tavor_mastery,,
+pr_marksman_tavor,tier_prestige,
+pr_expert_tavor,tier_prestige,
