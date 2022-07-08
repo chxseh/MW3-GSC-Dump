@@ -1,0 +1,136 @@
+
+// You can specify particular movies to play for particular maps
+// by using a line like this per map:
+// getmapname <name_of_map> strcmp ! if <name_of_movie_to_play> play then
+
+							// Credits special cases
+							//
+getmapname sp_intro strcmp ! // push whether this is intro
+prologue_select getdvar *	// ..and it with whether prologue_select is nonzero
+if							// if so..
+	prologue_select_load play // play 'prologue_select_load'
+then						//
+
+getmapname intro strcmp !
+if
+	sp_intro_load play
+then
+
+getmapname prologue strcmp !	
+if							
+	prologue_select_load play
+then
+
+getmapname paris_a strcmp !
+if
+	sp_paris_a_load play
+then
+
+getmapname paris_b strcmp !
+if
+	paris_transition_movie getdvar
+	if
+		sp_paris_b_load play
+	then
+	sp_paris_a_load play
+then	
+
+getmapname dubai strcmp ! // if credits only, then only play black
+if
+	ui_play_credits getdvar
+	if
+		black play
+	then
+	sp_dubai_load play
+then
+
+getmapname ny_manhattan_a strcmp !	
+if							
+	sp_ny_manhattan_load play
+then
+
+getmapname ny_manhattan_b strcmp !	
+if							
+	ny_manhattan_b_load play
+then
+
+getmapname ny_harbor strcmp !	
+if							
+	sp_ny_harbor_load play
+then
+
+getmapname payback_a strcmp !	
+if							
+	sp_payback_load play
+then
+
+getmapname payback_a2 strcmp !	
+if							
+	ny_payback_a2_load play
+then
+
+getmapname payback_b strcmp !	
+if							
+	ny_payback_b_load play
+then
+
+getmapname berlin_a strcmp !	
+if							
+	sp_berlin_load play
+then
+
+getmapname berlin_b strcmp !	
+if							
+	berlin_b_load play
+then
+
+getmapname hamburg_a strcmp !	
+if							
+	hamburg_load play
+then
+
+getmapname hamburg_b strcmp !	
+if							
+	hamburg_b_load play
+then
+
+getmapname paris_ac130_a strcmp !	
+if							
+	paris_ac130_load play
+then
+
+getmapname paris_ac130_b strcmp !	
+if							
+	paris_ac130_b_load play
+then
+
+getmapname warlord_a strcmp !	
+if							
+	sp_warlord_load play
+then
+
+getmapname warlord_b strcmp !	
+if							
+	warlord_b_load play
+then
+
+getmapname prague strcmp !
+if
+	sp_prague_load play
+then
+
+getmapname prague_escape_end strcmp !	
+if							
+	prague_escape_end play
+then
+
+getmapname innocent strcmp !	
+if							
+	innocent_load play
+then
+						// Default case
+						//
+getmapname				// Take the map name
+_load strcat			// append a '_load' at the end
+play					// and play it.
+

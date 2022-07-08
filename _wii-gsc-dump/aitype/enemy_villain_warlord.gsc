@@ -1,0 +1,56 @@
+
+main()
+{
+self.animTree = "";
+self.additionalAssets = "common_rambo_anims.csv";
+self.team = "axis";
+self.type = "human";
+self.subclass = "regular";
+self.accuracy = 0.2;
+self.health = 150;
+self.secondaryweapon = "";
+self.sidearm = "glock";
+self.wiiOptimized = 0;
+self.grenadeWeapon = "fraggrenade";
+self.grenadeAmmo = 0;
+if ( isAI( self ) )
+{
+self setEngagementMinDist( 0.000000, 0.000000 );
+self setEngagementMaxDist( 350.000000, 600.000000 );
+}
+self.weapon = "ak47";
+switch( codescripts\character::get_random_character(3) )
+{
+case 0:
+character\character_africa_militia_assault_a::main();
+break;
+case 1:
+character\character_africa_militia_assault_b::main();
+break;
+case 2:
+character\character_africa_militia_assault_c::main();
+break;
+}
+}
+spawner()
+{
+self setspawnerteam("axis");
+}
+precache()
+{
+character\character_africa_militia_assault_a::precache();
+character\character_africa_militia_assault_b::precache();
+character\character_africa_militia_assault_c::precache();
+precacheItem("ak47");
+precacheItem("glock");
+precacheItem("fraggrenade");
+maps\_rambo::main();
+}
+enumerate_xmodels()
+{
+models = [];
+models = codescripts\character::array_append(models,character\character_africa_militia_assault_a::enumerate_xmodels());
+models = codescripts\character::array_append(models,character\character_africa_militia_assault_b::enumerate_xmodels());
+models = codescripts\character::array_append(models,character\character_africa_militia_assault_c::enumerate_xmodels());
+codescripts\character::call_enumerate_xmodel_callback( models );
+}
